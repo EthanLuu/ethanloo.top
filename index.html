@@ -11,13 +11,12 @@
    <meta property="og:url" content="https://blog.ethanloo.one">
    <meta property="og:site_name" content="EthanLoo's - ethanloo.top">
    <meta property="og:description" content="ethanloo.top">
-   <meta property="og:image" content="http://zfe.space/images/headimage.png">
+   <meta property="og:image" content="https://gitee.com/ethanloo/markdownImage/raw/master/img/20201109203118.jpg">
     <link rel="shortcut icon" href=" favicon.ico" type="image/x-icon">
     <link rel="icon" href=" favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="APlayer.min.css">
     <link href="metro-all.css?ver=@@b-version" rel="stylesheet">
     <link href="start.css" rel="stylesheet">
-	<link href="justaddmusic.css" rel="stylesheet">
 
 	
     <title>ethanloo.top</title>
@@ -71,7 +70,7 @@ WIDGET = {
             </div>
 
             <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="关于我">
-                <div data-role="tile" data-cover="https://zfe.space/images/headimage.png">
+                <div data-role="tile" data-cover="https://ethanloo.top/img/avatar.png">
                     <span class="branding-bar">EthanLoo</span>
                 </div>
 				<div data-role="tile" class=" fg-white" style="background-color: #60a917">
@@ -152,37 +151,6 @@ WIDGET = {
                 
             </div>
 
-            <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="盒子导航（搭建中）">
-                <a data-role="tile"   data-cover="box.png" >
-                    <span  class="branding-bar">盒子</span>
-					<span class="badge-top">0</span>
-                </a>
-                <a data-role="tile"   style="background-color: #727272" >
-                     <span class="fa icon-chrome icon"></span>
-                    <span class="branding-bar">网站</span>
-					<span class="badge-top">0</span>
-                </a>
-                <a href="http://zfe.space/music/" data-role="tile"  data-cover="eastmusic.jpg">
-                    <span class="branding-bar">音乐</span>
-                    <span class="badge-top">1000+</span>
-                </a>
-				 <a data-role="tile"  class="bg-green"  >
-                   <span class="fa icon-images icon"></span>
-                     <span class="branding-bar">图库</span>
-					<span class="badge-top">0</span>
-                </a>
-				<a data-role="tile"  >
-                    <span class="branding-bar" class="bg-blue">电影</span>
-					<span class="fa icon-play icon"></span>
-                    <span class="badge-top">0</span>
-                </a>
-				<a data-role="tile"  style="background-color: #fc3">
-				 <span class="fa icon-pacman icon"></span>
-                    <span class="branding-bar">游戏</span>
-                    <span class="badge-top">0</span>
-                </a>
-            </div>
-
             <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="网站信息">
                 <a href="https://stats.uptimerobot.com/2OkvpSkWAJ" data-role="tile" class="bg-indigo fg-white">
                     <span class="fa icon-uniE903 icon"></span>
@@ -196,7 +164,7 @@ WIDGET = {
         <span class="badge-bottom" id="busuanzi_value_site_pv"></span>
                </a>
 				
-                <a href="mailto:499984532@qq.com" data-role="tile" class="bg-black fg-white">
+                <a href="mailto:952792901@qq.com" data-role="tile" class="bg-black fg-white">
                     <span class="fa icon-mail4 icon"></span>
                     <span class="branding-bar">联系我</span>
       
@@ -217,13 +185,9 @@ WIDGET = {
     </div>
 	
     <script src="jquary.js"></script>
-    <script src="JustAddMusic.js"></script>
     <script src="jquary.js"></script>
-    <script src="APlayer.min.jam.js"></script>
-<script async src="busuanzi.js"></script>
     <script src="metro.js"></script>
     <script src="start.js"></script>
-	<script src="Meting.min.js"></script>
 <script>
 
 
@@ -237,53 +201,8 @@ WIDGET = {
 			container.appendChild(bar);
 		}
 		
-		// create a new JAM instance:
-		var jam = new JustAddMusic({
-			 // default audio to load:
-			 
-			paused:true,
-			deltaT:150,
-              avgT:150,
-			// label text to include in the UI (bottom left)
-			<!--label: "<b>JustAddMusic.js </b>", -->
-			volume:0,
-			// set the number of spectrum values we'd like to get back:
-			spectrumBins: bars,
 
-			// the ontick callback, called 60 time per second by default
-			// with the latest audio data object as the only parameter
-			ontick: function(o) {
-				// change the base hue value on a bass hit:
-				if (o.low.hit) { hue = (hue+100)%360; }
-
-				for (var i=0; i<bars; i++) {
-					// update bars based on the spectrum values:
-					var style = container.childNodes[i].style, val = o.spectrum[i];
-					style.height = val*20+"%";
-					style.background = "hsl("+ (hue-val*180) +","+ (val*50+50) +"%,"+ (val*40+20) +"%)";
-				}
-			}
-		});
  
-setTimeout(function(){	 
-
-jam.loadAudio(ap.audio.currentSrc);
-$(".aplayer-list").click(function(){
-	              ap.volume(0, true);
-  				  setTimeout(function(){jam.loadAudio(ap.audio.currentSrc);console.log(ap.audio.currentSrc)},500);
-				  setTimeout(function(){ap.play();ap.seek(0);jam.seek(0);ap.volume(1, true)},4000);
-});
-$(".aplayer-icon-back").click(function(){
-	              ap.volume(0, true);
-  				  setTimeout(function(){jam.loadAudio(ap.audio.currentSrc);console.log(ap.audio.currentSrc)},500);
-				  setTimeout(function(){ap.play();ap.seek(0);jam.seek(0);ap.volume(1, true)},4000);
-});
-$(".aplayer-icon-forward").click(function(){
-	              ap.volume(0, true);
-  				  setTimeout(function(){jam.loadAudio(ap.audio.currentSrc);console.log(ap.audio.currentSrc)},500);
-				  setTimeout(function(){ap.play();ap.seek(0);jam.seek(0);ap.volume(1, true)},4000);
-});
-console.log(ap.audio.currentSrc)},1500);
 
 
 
@@ -292,7 +211,6 @@ console.log(ap.audio.currentSrc)},1500);
 <script>
 
 </script>
-<!--<script src="getmusicurl.js"></script>-->
 
 </body>
 </html>
