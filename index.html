@@ -24,7 +24,14 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link href="metro-all.css?ver=@@b-version" rel="stylesheet" />
     <link href="start.css" rel="stylesheet" />
-
+    <link href="iconfont.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;900&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
     <title>ethanloo.top</title>
   </head>
   <body class="bg-dark fg-white h-vh-100 m4-cloak">
@@ -35,10 +42,7 @@
       <h1 class="start-screen-title">ethanloo.top</h1>
 
       <div class="tiles-area clear">
-        <div
-          class="tiles-grid tiles-group size-2 fg-white"
-          data-group-title=""
-        >
+        <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="">
           <a
             href="https://blog.ethanloo.top"
             data-role="tile"
@@ -55,7 +59,9 @@
             data-size="small"
             class="bg-indigo"
           >
-            <span class="fa icon-github icon"></span>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icongithub"></use>
+            </svg>
           </a>
           <a
             target="_blank"
@@ -64,7 +70,9 @@
             data-size="small"
             style="background-color: #ff5c7c"
           >
-            <span class="fa icon-bilibili-line icon"></span>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#iconbilibili-line"></use>
+            </svg>
           </a>
           <a
             target="_blank"
@@ -72,7 +80,9 @@
             data-size="small"
             style="background-color: #fc3"
           >
-            <span class="fa icon-weibo icon"></span>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#iconweibo"></use>
+            </svg>
           </a>
         </div>
 
@@ -82,7 +92,7 @@
         >
           <div
             data-role="tile"
-            data-cover="https://www.ethanloo.top/img/avatar.png"
+            data-cover="https://gitee.com/ethanloo/markdownImage/raw/master/img/20201124165411.png"
           >
             <span class="branding-bar">EthanLoo</span>
           </div>
@@ -92,23 +102,22 @@
             style="background-color: #357a3b"
           >
             <ul>
-              <li style="list-style-type: none; font-size: 0.8rem">
+              <li style="list-style-type: none;">
                 <b>性别：</b>男
               </li>
-              <li style="list-style-type: none; font-size: 0.8rem">
+              <li style="list-style-type: none;">
                 <b>年龄：</b>21
               </li>
-              <li style="list-style-type: none; font-size: 0.8rem">
+              <li style="list-style-type: none;">
                 <b>住址：</b>江苏 苏州
               </li>
-              <li style="list-style-type: none; font-size: 0.8rem">
+              <li style="list-style-type: none;">
                 <b>学历：</b>本科 软工
               </li>
-              <li style="list-style-type: none; font-size: 0.8rem">
+              <li style="list-style-type: none;">
                 <b>爱好：</b>游戏 动漫
               </li>
             </ul>
-            <span class="branding-bar">个人信息</span>
           </div>
           <div
             data-role="tile"
@@ -117,7 +126,7 @@
             data-size="wide"
           >
             <ul>
-              <span style="font-size: 0.8rem"
+              <span style="font-size: 1rem"
                 >我，爱折腾花里胡哨。<br />
                 擅长制作网站。<br />
                 目标是保研南大。<br />
@@ -132,20 +141,18 @@
               <li
                 style="
                   list-style-type: none;
-                  font-size: 0.7rem;
                   margin-top: 10px;
                 "
               >
-                <b>🎓&nbsp&nbsp&nbsp本科&nbsp&nbsp&nbsp2018-2022</b>
+                <b>🎓&nbsp&nbsp&nbsp本科&nbsp&nbsp&nbsp2018-2022 </b>
               </li>
               <li
                 style="
                   list-style-type: none;
-                  font-size: 0.8rem;
                   padding-bottom: 10px;
                 "
               >
-                苏州大学 计算机科学与技术学院 软件工程
+                苏州大学 软件工程
               </li>
             </ul>
             <span class="branding-bar">教育经历</span>
@@ -154,9 +161,8 @@
 
         <div
           class="tiles-grid tiles-group size-1 fg-white"
-          data-group-title="掌握技能"
+          data-group-title="技能"
         >
-          </a>
           <a
             target="_blank"
             href="https://www.adobe.com/cn/products/photoshop.html"
@@ -164,16 +170,20 @@
             data-size="small"
             style="background-color: #001e36"
           >
-            <img src="PS.svg" class="icon" />
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#iconPS"></use>
+            </svg>
           </a>
           <a
             target="_blank"
             href="https://www.adobe.com/cn/products/premiere.html"
             data-role="tile"
             data-size="small"
-            style="background-color: #00005b"
+            style="background-color: #001e36"
           >
-            <img src="PR.svg" class="icon" />
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#iconPr"></use>
+            </svg>
           </a>
 
           <a
@@ -183,33 +193,41 @@
             data-size="small"
             style="background-color: #0e83cd"
           >
-            <img src="hexo.png" class="icon" />
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#iconhexo"></use>
+            </svg>
           </a>
           <a
             data-role="tile"
             data-size="small"
-            href="https://wordpress.org/"
-            style="background-color: #016087"
-          >
-            <img src="wp.png" class="icon" />
-          </a>
-          <a
-            target="_blank"
-            data-role="tile"
-            href="https://jquery.com/"
-            data-size="small"
+            href="https://enable-javascript.com/"
             style="background-color: #1b75bb"
           >
-            <img src="jq.png" class="icon" />
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#iconjava-script"></use>
+            </svg>
+          </a>
+          <a
+            target="_blank"
+            data-role="tile"
+            href="https://www.python.org/"
+            data-size="small"
+            style="background-color: #996699"
+          >
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#iconIoniconslogopython"></use>
+            </svg>
           </a>
           <a
             target="_blank"
             data-role="tile"
             data-size="small"
-            href="https://www.bootcss.com/"
-            style="background-color: #563d7c"
+            href="http://www.java.com/"
+            style="background-color: #996699"
           >
-            <img src="bootstrap.png" class="icon" />
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#iconjava1"></use>
+            </svg>
           </a>
         </div>
 
@@ -222,7 +240,9 @@
             data-role="tile"
             class="bg-indigo fg-white"
           >
-            <span class="fa icon-uniE903 icon"></span>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#iconjiankong"></use>
+            </svg>
             <span class="branding-bar">网站监控</span>
           </a>
           <a
@@ -230,7 +250,9 @@
             data-role="tile"
             class="bg-black fg-white"
           >
-            <span class="fa icon-mail4 icon"></span>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#iconmail"></use>
+            </svg>
             <span class="branding-bar">联系我</span>
           </a>
         </div>
@@ -251,6 +273,6 @@
     <script src="jquary.js"></script>
     <script src="metro.js"></script>
     <script src="start.js"></script>
-    <script></script>
+    <script src="iconfont.js"></script>
   </body>
 </html>

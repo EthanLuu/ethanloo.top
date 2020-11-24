@@ -56,6 +56,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
+  font-family: 'Noto Serif SC', "Microsoft Yahei UI", "Microsoft Yahei", sans-serif;
 }
 
 body:before {
@@ -78,6 +79,13 @@ body {
   margin: 0;
 }
 
+/* 字体大小 */
+.ul.li {
+  
+  list-style-type: none;
+  font-size: 1rem;
+}
+
 @media all and (max-width: 768px) {
   #footer {
     position: static;
@@ -90,57 +98,12 @@ body {
   }
 }
 
-@font-face {
-  font-family: "icomoon";
-  /* 自行安装第三方字体图标库 */
-  src: url("icomoon.eot");
-  src: url("icomoon.woff") format("woff"), url("icomoon.ttf") format("truetype"),
-    url("icomoon.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-.fa {
-  display: inline-block;
-  /* 以下的 font 与上面 @font-face 的 font-family 要一致*/
-  font: normal normal normal 14px/1 icomoon;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.icon-weibo:before {
-  content: "\e902";
-  color: #fff;
-}
-.icon-uniE903:before {
-  content: "\e903";
-  color: #fff;
-}
-.icon-steam:before {
-  content: "\e901";
-  color: #fff;
-}
-.icon-bilibili-line:before {
-  content: "\e900";
-  color: #fff;
-}
-.icon-images:before {
-  content: "\e90e";
-}
-.icon-play:before {
-  content: "\e912";
-}
-.icon-pacman:before {
-  content: "\e916";
-}
-.icon-mail4:before {
-  content: "\ea86";
-}
-.icon-github:before {
-  content: "\eab0";
-}
-.icon-chrome:before {
-  content: "\ead9";
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
 }
 
 meter::-webkit-meter-bar {
