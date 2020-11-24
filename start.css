@@ -10,17 +10,17 @@
   left: 80px;
   display: none;
 }
-[class*=tile-] {
+[class*="tile-"] {
   -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-          transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
 }
 .tiles-group {
   margin-left: 0;
   margin-top: 50px;
 }
 @media all and (max-width: 768px) {
-.aplayer {
+  .aplayer {
     display: none;
   }
 }
@@ -40,27 +40,25 @@
   }
 }
 #footer {
-    width: 100%;
-    color: white;
-    float: left;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    padding: 2em 0;
-    z-index: 11;
-    /* background-color: blue; */
+  width: 100%;
+  color: white;
+  float: left;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding: 2em 0;
+  z-index: 11;
+  /* background-color: blue; */
 }
-body{
+body {
   background-position: -99999px -99999px;
-  background-image: url(back.jpg);
-  background-repeat:no-repeat;
-  background-attachment:fixed;
-  background-position:top;
- 
-  }
-  
-body:before{
+  background-image: url(background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+}
 
+body:before {
   content: "";
   background-image: inherit;
   position: fixed;
@@ -71,41 +69,44 @@ body:before{
   -webkit-background-size: cover !important;
   -moz-background-size: cover !important;
   -o-background-size: cover;
-  background-size: cover !important; 
-  z-index: -1}
-html, body {
+  background-size: cover !important;
+  z-index: -1;
+}
+html,
+body {
   height: 100%;
   margin: 0;
 }
- 
-@media all and (max-width: 768px) { 
-   #footer {
 
-    position:static;
-
-} ; 
-body{overflow-x: hidden;};
-::-webkit-scrollbar{width:0px}
-    } 
+@media all and (max-width: 768px) {
+  #footer {
+    position: static;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+}
 
 @font-face {
-    font-family: 'icomoon';
-    /* 自行安装第三方字体图标库 */
-    src: url('icomoon.eot');
-    src: url('icomoon.woff') format('woff'),
-    url('icomoon.ttf') format('truetype'),
-    url('icomoon.svg') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "icomoon";
+  /* 自行安装第三方字体图标库 */
+  src: url("icomoon.eot");
+  src: url("icomoon.woff") format("woff"), url("icomoon.ttf") format("truetype"),
+    url("icomoon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
-  .fa {
-    display: inline-block;
-    /* 以下的 font 与上面 @font-face 的 font-family 要一致*/
-    font: normal normal normal 14px/1 icomoon;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.fa {
+  display: inline-block;
+  /* 以下的 font 与上面 @font-face 的 font-family 要一致*/
+  font: normal normal normal 14px/1 icomoon;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .icon-weibo:before {
   content: "\e902";
@@ -143,68 +144,21 @@ body{overflow-x: hidden;};
 }
 
 meter::-webkit-meter-bar {
-
-  background: #FFF;
-height:5px;
-
+  background: #fff;
+  height: 5px;
 }
 
 meter::-webkit-meter-optimum-value {
-
   background: linear-gradient(to bottom, #60a917, #60a917);
-height:5px;
+  height: 5px;
 }
 
 meter::-webkit-meter-suboptimum-value {
-
   background: linear-gradient(to bottom, #60a917, #60a917);
-height:5px;
+  height: 5px;
 }
 
 meter::-webkit-meter-even-less-good-value {
-
   background: linear-gradient(to bottom, #60a917, #60a917);
-height:5px;
+  height: 5px;
 }
-.aplayer-body{    position: fixed;
-    top: 594px!important;
-    left: 80px!important;
-	    width: 310px!important;
-	}
-.aplayer.aplayer-fixed .aplayer-list {
-    margin-bottom: 0px!important;
-    border: 0px solid #eee;
-    border-bottom: none;
-}
-.aplayer.aplayer-fixed {
-    position: fixed;
-    top: 594px!important;
-    left: 80px!important;
-    z-index: 99;
-    max-width: 310px!important;
-}
-.aplayer .aplayer-lrc p {
-	font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Helvetica Neue", sans-serif;
-	font-weight: 600;
-	color: #ffffff;
-	    text-shadow: 0px 0px 0 #666;
-font-size: 0.8rem;}
-.aplayer-title {
-        color: #666!important;
-}
-.aplayer .aplayer-lrc p.aplayer-lrc-current {
- padding-top:1px!important;
-    min-height: 30px!important;
-}
-.aplayer-lrc{
-  
-}
-.aplayer-list{
-  margin-top:66px;
-  max-height:180px!important;
-  
-}
-.aplayer .aplayer-list ol {
-	max-height:180px!important;
-	}
-	
