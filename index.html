@@ -1,285 +1,73 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
   <head>
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no"
-    />
-    <title>EthanLoo's - ethanloo.top</title>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="EthanLoo's - ethanloo.top" />
-    <meta property="og:url" content="https://www.ethanloo.top" />
-    <meta property="og:site_name" content="EthanLoo's - ethanloo.top" />
-    <meta property="og:description" content="ethanloo.top" />
-    <meta
-      property="og:image"
-      content="https://gitee.com/ethanloo/markdownImage/raw/master/img/20201109203118.jpg"
-    />
-    <link
-      rel="shortcut icon"
-      href="https://cdn.ethanloo.top/img/favicon.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="icon"
-      href="https://cdn.ethanloo.top/img/favicon.png"
-      type="image/x-icon"
-    />
-    <link
-      href="https://s3.pstatp.com/cdn/expire-1-M/metro/4.2.41/css/metro-all.css"
-      type="text/css"
-      rel="stylesheet"
-    />
-    <link
-      href="start.css"
-      rel="stylesheet"
-      media="defer"
-      onload="this.media='all'"
-    />
-    <link
-      href="iconfont.css"
-      rel="stylesheet"
-      media="defer"
-      onload="this.media='all'"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EthanLoo's lab</title>
+    <link rel="shortcut icon" href="https://cdn.ethanloo.top/img/favicon.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
       rel="stylesheet"
-      media="defer"
-      onload="this.media='all'"
     />
-    <title>ethanloo.top</title>
+    <style>
+      body {
+        font-family: "Noto Serif SC", -apple-system, BlinkMacSystemFont,
+          "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+          "Helvetica Neue", sans-serif;
+        font-size: calc(10px + 0.33vw);
+        -webkit-font-smoothing: antialiased;
+        padding: 5vh 10vw;
+        color: #111111;
+      }
+      h1 {
+          font-size: 2.4em;
+      }
+      p {
+        font-size: 1.6em;
+        line-height: 1.4;
+        max-width: 28em;
+      }
+      ul {
+        list-style: circle;
+      }
+      a {
+        text-decoration: none;
+        position: relative;
+        color: #123456;
+      }
+      a::after{
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 90%;
+        left: -0.1em;
+        right: -0.1em;
+        bottom: 0;
+        transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+        background: linear-gradient(to right, rgb(127, 127, 213,0.5), rgb(134, 168, 231,0.5), rgb(145, 234, 228,0.5));
+      }
+
+      a:hover:after{
+        top: 0%;
+      }
+
+      span{
+        font-size: 1em;
+        background-color: #f3f4f4;
+        padding: 0 2px 0 2px;
+        border: 1px solid #e7eaed;
+        border-radius: 3px;
+        margin-left: 10px;
+      }
+      span::before{
+        content: ">>> ";
+      }
+    </style>
   </head>
-  <body class="bg-dark fg-white h-vh-100 m4-cloak">
-    <div
-      class="container-fluid start-screen h-100 main"
-      style="backdrop-filter: blur(2px); width: 100%; overflow-x: hidden"
-    >
-      <h1 class="start-screen-title">ethanloo.top</h1>
-
-      <div class="tiles-area clear">
-        <div class="tiles-grid tiles-group size-2 fg-white" data-group-title="">
-          <a
-            href="https://blog.ethanloo.top"
-            data-role="tile"
-            class="fg-white"
-            data-cover="https://cdn.ethanloo.top/img/20201213230744.webp"
-            data-size="wide"
-          >
-            <span class="branding-bar">我的博客</span>
-          </a>
-          <a
-            target="_blank"
-            href="https://github.com/Ethanluu"
-            data-role="tile"
-            data-size="small"
-            class="bg-indigo"
-          >
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icongithub"></use>
-            </svg>
-          </a>
-          <a
-            target="_blank"
-            href="https://space.bilibili.com/2386980"
-            data-role="tile"
-            data-size="small"
-            style="background-color: #ff5c7c"
-          >
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#iconbilibili-line"></use>
-            </svg>
-          </a>
-          <a
-            target="_blank"
-            data-role="tile"
-            data-size="small"
-            style="background-color: #fc3"
-          >
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#iconweibo"></use>
-            </svg>
-          </a>
-        </div>
-
-        <div
-          class="tiles-grid tiles-group size-2 fg-white"
-          data-group-title="关于我"
-        >
-          <div
-            data-role="tile"
-            data-cover="https://gitee.com/ethanloo/markdownImage/raw/master/img/20201124165411.png"
-          >
-            <span class="branding-bar">EthanLoo</span>
-          </div>
-          <div
-            data-role="tile"
-            class="fg-white"
-            style="background-color: #357a3b"
-          >
-            <ul>
-              <li style="margin-top: 10px; list-style-type: none">
-                <b>性别：</b>男
-              </li>
-              <li style="list-style-type: none"><b>年龄：</b>21</li>
-              <li style="list-style-type: none"><b>住址：</b>江苏 苏州</li>
-              <li style="list-style-type: none"><b>学历：</b>本科 软工</li>
-              <li style="list-style-type: none"><b>爱好：</b>吃饭 睡觉</li>
-            </ul>
-          </div>
-          <div
-            data-role="tile"
-            class="fg-white"
-            style="background-color: #2a475e"
-            data-size="wide"
-          >
-            <ul style="margin-top: 10px">
-              <span style="font-size: 1rem"
-                >我，爱折腾<br />
-                擅长制作网站<br />
-                目标是保研南大<br />
-                革命尚未成功</span
-              >
-              <span class="branding-bar">自我介绍</span>
-            </ul>
-          </div>
-
-          <div data-role="tile" class="bg-teal fg-white" data-size="wide">
-            <ul>
-              <li style="list-style-type: none; margin-top: 10px">
-                <b>🎓&nbsp&nbsp&nbsp本科&nbsp&nbsp&nbsp2018-2022 </b>
-              </li>
-              <li style="list-style-type: none; padding-bottom: 10px">
-                苏州大学 软件工程
-              </li>
-            </ul>
-            <span class="branding-bar">教育经历</span>
-          </div>
-        </div>
-
-        <div
-          class="tiles-grid tiles-group size-1 fg-white"
-          data-group-title="技能"
-        >
-          <a
-            target="_blank"
-            href="https://www.adobe.com/cn/products/photoshop.html"
-            data-role="tile"
-            data-size="small"
-            style="background-color: #79bce7"
-          >
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#iconPS"></use>
-            </svg>
-          </a>
-          <a
-            target="_blank"
-            href="https://www.adobe.com/cn/products/premiere.html"
-            data-role="tile"
-            data-size="small"
-            style="background-color: #703280"
-          >
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#iconPr"></use>
-            </svg>
-          </a>
-
-          <a
-            target="_blank"
-            data-role="tile"
-            href="https://hexo.io/zh-cn/"
-            data-size="small"
-            style="background-color: #077e7a"
-          >
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#iconhexo"></use>
-            </svg>
-          </a>
-          <a
-            data-role="tile"
-            data-size="small"
-            href="https://enable-javascript.com/"
-            style="background-color: #c06c4b"
-          >
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#iconjava-script"></use>
-            </svg>
-          </a>
-          <a
-            target="_blank"
-            data-role="tile"
-            href="https://www.python.org/"
-            data-size="small"
-            style="background-color: #3580e4"
-          >
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#iconIoniconslogopython"></use>
-            </svg>
-          </a>
-          <a
-            target="_blank"
-            data-role="tile"
-            data-size="small"
-            href="http://www.java.com/"
-            style="background-color: #634019"
-          >
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#iconjava1"></use>
-            </svg>
-          </a>
-        </div>
-
-        <div
-          class="tiles-grid tiles-group size-2 fg-white"
-          data-group-title="网站信息"
-        >
-          <a
-            href="https://stats.uptimerobot.com/GgLJ0IJYGO"
-            data-role="tile"
-            class="bg-indigo fg-white"
-          >
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#iconjiankong"></use>
-            </svg>
-            <span class="branding-bar">网站监控</span>
-          </a>
-          <a
-            href="mailto:952792901@qq.com"
-            data-role="tile"
-            class="bg-black fg-white"
-          >
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#iconmail"></use>
-            </svg>
-            <span class="branding-bar">联系我</span>
-          </a>
-        </div>
-      </div>
-      <div id="footer">
-        <p>© 2020 By EthanLoo</p>
-        <p>
-          Powered By
-          <a
-            target="_blank"
-            style="color: #ffffff"
-            href="https://metroui.org.ua/index.html "
-            >Metro 4</a
-          >
-        </p>
-      </div>
-    </div>
-    <script src="jquary.js"></script>
-    <script
-      src="https://s2.pstatp.com/cdn/expire-1-M/metro/4.2.41/js/metro.js"
-      type="application/javascript"
-    ></script>
-    <script src="start.js"></script>
-    <script src="iconfont.js"></script>
+  <body>
+    <h1>It's Ethan here.</h1>
+    <p>Glad to meet you.</p>
+    <p>This is my <a href="https://blog.ethanloo.top">blog</a>. </p>
   </body>
 </html>
